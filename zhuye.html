@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/jquery.fullPage.min.js"></script>
+    <script src="js/jquery.fullPage.min.js"></script>
+    <link rel="stylesheet" href="css/lg.css">
+    <link rel="stylesheet" href="css/jquery.fullPage.css">
+    <style>
+        .menu{
+            width: 100%;
+            height: 50px;
+            position: fixed;
+            top: 0;
+            left: 0;
+        }
+
+        .menu ul{
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            width: 100%;
+            height: 50px;
+            background: #DCFF80;
+
+
+        }
+        .menu ul li a{
+            display: block;
+            width: 25%;
+            height: 50px;
+            text-align: center;
+            line-height: 50px;
+            font-weight: 600;
+            float: left;
+            cursor: pointer;
+            color: #000;
+            text-decoration: none;
+
+        }
+        .floor2{
+            position: relative;
+        }
+        .zuo{
+            width: 200px;
+            height: 200px;
+            background: #0e86ff;
+            position: absolute;
+            top: 100px;
+            left: -300px;
+            transition: all 0.5s;
+        }
+        .you{
+            width: 200px;
+            height: 200px;
+            background: #0e86ff;
+            position: absolute;
+            top: 100px;
+            right: -300px;
+            transition: all 0.5s;
+        }
+        .next{
+            width: 50px;
+            height: 50px;
+            background: pink;
+            position: fixed;
+            bottom: 30px;
+            left: 50%;
+            margin-left: -25px;
+            line-height: 50px;
+            text-align: center;
+            transform: rotate(90deg);
+            cursor: pointer;
+        }
+        .container .section:nth-child(1){
+            background: url("img/banner.jpg") no-repeat;
+            background-size: cover;
+
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <div class="section">
+        <div class="neikuan">
+            <div class="floor1">
+                <h1>欢迎来到我的个人主页</h1>
+                <h2>Welcome to my personal page</h2>
+                <a href=""><img src="img/arrow.png" alt=""></a>
+            </div>
+            <div class="menu">
+                <ul>
+                    <li><a href="#page1">首页</a></li>
+                    <li><a href="#page2">个人简历</a></li>
+                    <li><a href="#page3">作品展示</a></li>
+                    <li><a href="#page4">联系方式</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="section">
+        <div class="floor2">
+            <div class="neikuan">
+                <div class="guanyu">
+                    <h4>关于我</h4>
+                    <h5>About me</h5>
+                </div>
+                <div class="jieshao">
+                    <img src="img/1.jpg" alt="">
+                    <h1>Du shuai</h1>
+                    <h2>Front End Engineer</h2>
+                </div>
+                <div class="jineng">
+                    <h2>Professional Skills</h2>
+                    <div class="skill">
+                        <span class="icon">&#xe7cd;</span>
+                        <p class="zi">HTML5</p>
+                        <p class="zi">90%</p>
+                    </div>
+                    <div class="skill">
+                        <span class="icon">&#xe674;</span>
+                        <p class="zi">CSS3</p>
+                        <p class="zi">85%</p>
+                    </div>
+                    <div class="skill">
+                        <span class="icon">&#xe624;</span>
+                        <p class="zi">Java Script</p>
+                        <p class="zi">90%</p>
+                    </div>
+                    <div class="skill skill2">
+                        <span class="icon">&#xe6bf;</span>
+                        <p class="zi">Photo Shop</p>
+                        <p class="zi">95%</p>
+                    </div>
+                    <div class="skill skill2">
+                        <span class="icon">&#xe6a6;</span>
+                        <p class="zi">Adobe Illustrator</p>
+                        <p class="zi">87%</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div class="section">
+        <div class="neikuan">
+            <h1 class="zuopin">作品展示</h1>
+            <div class="shouye">
+                <h2>网站首页</h2>
+                <a href="fanke/index.html" class="bianzi">凡客首页</a>
+                <a href="IM/im.html" class="bianzi">小米首页</a>
+                <a href="tianmao/tianmao.html" class="bianzi">天猫首页</a>
+                <a href="jingdong/index.html" class="bianzi">京东首页</a>
+                <a href="yidong/yidong.html" class="bianzi">移动首页</a>
+                <a href="pingguo/index.html" class="bianzi">苹果首页</a>
+                <a href="yintai/index.html" class="bianzi">银泰网首页</a>
+            </div>
+            <div class="youxi">
+                <h2>游戏作品</h2>
+                <a href="">贪吃蛇</a>
+                <a href="">打字游戏</a>
+                <a href="">粒子动画</a>
+                <a href="">扫雷</a>
+            </div>
+        </div>
+    </div>
+    <div class="section">
+        <div class="neikuan">
+            <h4>CONTACT ME</h4>
+            <h5>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</h5>
+            <div class="lianxi">
+                <div class="lianxi_left">
+                    <input type="text" value="Name :">
+                    <input type="email" value="Email :">
+                    <textarea name="message" id="" cols="30" rows="10">Message</textarea>
+                    <input type="submit" value="Send Massage">
+                </div>
+                <div class="lianxi_right">
+                    <h3>Contact Info</h3>
+                    <div>
+                        <span class="icon">&#xe74e;</span>
+                        <p>TaiYuan China</p>
+                    </div>
+                    <div>
+                        <span class="icon">&#xe693;</span>
+                        <p>18435106215</p>
+                    </div>
+                    <div>
+                        <span class="icon">&#xe61d;</span>
+                        <p>757293200@qq.com</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+<script>
+    $(".container").fullpage({
+            sectionsColor:["red","#dedede","#CFFF3A","#DEDCA1"],
+            slidesColor:["#33e3","#444","#555"],
+            anchors: ['page1', 'page2', 'page3', 'page4','page5'],
+            loopBottom:true,  //是否从最后一屏到第一屏
+            fixedElements:".menu,.next",   //谁需要固定定位
+            menu:"#menu",   //跳转对应页面
+            navigation:true,  //右边点
+//        navigationPosition:right,  //点显示在左边还是右边
+            navigationColor:"yellow",
+            afterLoad:function (an,index) {   //进入这一屏时候2边东西飞入
+                if(index==2){
+                    $('.jieshao').fadeIn();
+                    $('.jineng').fadeIn();
+                }
+                if(index==3){
+                    $('.zuopin').css({left:10,transform:"scale(1,1)"});
+                    $('.youxi').css({transform:"scale(1,1)"});
+                    $('.shouye').css({transform:"scale(1,1)"});
+
+                }
+            },
+            onLeava:function (index) {
+                if(index==3){
+                    $('.youxi').css({transform:"scale(0.5,0.5)"});
+                    $('.shouye').css({transform:"scale(0.5,0.5)"});
+                }
+            }
+
+
+        }
+
+    )
+    $('.next').click(function () {
+        if($(this).hasClass('active')){
+            $.fn.fullpage.moveTo(1)
+        }else {
+
+        }
+    })
+
+</script>
+</body>
+</html>

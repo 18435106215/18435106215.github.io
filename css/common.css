@@ -1,0 +1,25 @@
+body,div,p,ul,li,dl,dt,dd,ol,pre,form,h1,h2,h3,h4,h5,h6,input textarea{
+	margin:0;
+	padding:0;
+	list-style:none;
+	box-sizing: border-box;
+}
+a{
+	text-decoration:none;
+}
+img{
+border:0;
+}
+@font-face {
+	font-family: 'icon';
+	src: url('../icon/iconfont.eot');
+	src: url('../icon/iconfont.eot?#iefix') format('embedded-opentype'),
+	url('../icon/iconfont.woff') format('woff'),
+	url('../icon/iconfont.ttf') format('truetype'),
+	url('../icon/iconfont.svg#iconfont') format('svg');
+}
+.icon{
+	font-family:"icon";
+	font-size:38px;
+	font-style:normal;
+}
