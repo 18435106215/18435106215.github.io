@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>粒子动画</title>
+    <style>
+        canvas{
+            background: #ccc;
+        }
+    </style>
+</head>
+<body>
+<canvas width="500" height="500"></canvas>
+
+
+
+<script>
+    window.onload=function () {
+        let canvas=document.querySelector('canvas');
+        let cobj=canvas.getContext('2d');
+        let x=200;
+        let y=200;
+        canvas.onmousemove=function (e) {
+            x=e.offsetX;
+            y=e.offsetY;
+        };
+
+
+        class lizi{
+            constructor(canvas,cobj){
+                this.canvas=canvas;
+                this.cobj=cobj;
+                this.r=10;
+                this.x=x;
+                this.y=y;
+                this.speedX=4*Math.random()-2;
+                this.speedY=-5;
+                this.g=0.3;
+                this.size=this.r*Math.random();
+                this.color=`rgb(${parseInt(255*Math.random())},${parseInt(255*Math.random())},${parseInt(255*Math.random())})`
+
+            }
+            draw(){
+                this.cobj.save();
+                this.cobj.beginPath();  //提笔
+                this.cobj.translate(this.x,this.y);  //平移
+                this.cobj.arc(0,0,this.r,0,Math.PI*2);//画圆
+                this.cobj.fill();   //填充
+                this.cobj.restore();
+                this.cobj.fillStyle=this.color;
+            }
+            updata(){
+                this.x+=this.speedX;
+                this.speedY+=this.g;
+                this.y+=this.speedY;
+                this.r=this.size;
+            }
+
+        }
+
+        let arr=[];
+        let liziobj=new lizi(canvas,cobj);
+        liziobj.draw();
+        let t=setInterval(function () {
+            cobj.clearRect(0,0,500,500)
+            let liziobj=new lizi(canvas,cobj);
+
+            arr.push(liziobj);
+            for(let i=0;i<arr.length;i++){
+                arr[i].draw();
+                arr[i].updata();
+            }
+//
+        },50)
+
+
+
+
+
+
+    }
+
+
+
+
+</script>
+</body>
+</html>

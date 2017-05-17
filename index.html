@@ -23,7 +23,7 @@
             list-style: none;
             width: 100%;
             height: 50px;
-            background: #DCFF80;
+            background: #EBEBEB;
 
 
         }
@@ -33,12 +33,16 @@
             height: 50px;
             text-align: center;
             line-height: 50px;
-            font-weight: 600;
+            font-weight: 500;
             float: left;
             cursor: pointer;
             color: #000;
             text-decoration: none;
 
+        }
+
+        .menu ul li a:hover{
+            color: #5FB9F9;
         }
         .floor2{
             position: relative;
@@ -154,14 +158,14 @@
                 <a href="tianmao/tianmao.html" class="bianzi">天猫首页</a>
                 <a href="jingdong/index.html" class="bianzi">京东首页</a>
                 <a href="yidong/yidong.html" class="bianzi">移动首页</a>
-                <a href="pingguo/index.html" class="bianzi">苹果首页</a>
+                <a href="shafa/index.html" class="bianzi">沙发网首页</a>
                 <a href="yintai/index.html" class="bianzi">银泰网首页</a>
             </div>
             <div class="youxi">
                 <h2>游戏作品</h2>
                 <a href="">贪吃蛇</a>
                 <a href="">打字游戏</a>
-                <a href="">粒子动画</a>
+                <a href="lizi/index.html">粒子动画</a>
                 <a href="">扫雷</a>
             </div>
         </div>
@@ -196,6 +200,7 @@
         </div>
     </div>
 
+
 </div>
 <script>
     $(".container").fullpage({
@@ -210,25 +215,44 @@
             navigationColor:"yellow",
             afterLoad:function (an,index) {   //进入这一屏时候2边东西飞入
                 if(index==2){
-                    $('.jieshao').fadeIn();
-                    $('.jineng').fadeIn();
+                    $('.jieshao').css({transform:"scale(1,1)"});
+                    $('.jineng').css({transform:"scale(1,1)"});
+                    $('.guanyu').fadeIn(500)
                 }
                 if(index==3){
-                    $('.zuopin').css({left:10,transform:"scale(1,1)"});
+                    $('.zuopin').css({left:10}).fadeIn(500);
                     $('.youxi').css({transform:"scale(1,1)"});
                     $('.shouye').css({transform:"scale(1,1)"});
 
                 }
-            },
-            onLeava:function (index) {
-                if(index==3){
-                    $('.youxi').css({transform:"scale(0.5,0.5)"});
-                    $('.shouye').css({transform:"scale(0.5,0.5)"});
+                if(index==4){
+                    $('.lianxi').css({height:400})
                 }
+            },
+            onLeave:function (index) {
+                if(index==3){
+                    $('.youxi').css({transform:"scale(0,0)"});
+                    $('.shouye').css({transform:"scale(0,0)"});
+                    $('.zuopin').css({left:10}).hide(500);
+                }
+                if(index==2){
+                    $('.jieshao').css({transform:"scale(0,0)"});
+                    $('.jineng').css({transform:"scale(0,0)"});
+                    $('.guanyu').hide(500)
+                }
+                if(index==4){
+                    $('.lianxi').css({height:0})
+                }
+            },
+            afterRender:function () {    //页面初始化后
+                $('.container').slideDown(1000);
+                $('.menu').slideDown(1000);
+
             }
 
 
         }
+
 
     )
     $('.next').click(function () {
@@ -238,6 +262,8 @@
 
         }
     })
+
+
 
 </script>
 </body>
