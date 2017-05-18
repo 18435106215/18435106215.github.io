@@ -27,6 +27,9 @@
 
 
         }
+        /*.menu ul li a.active{*/
+            /*background: #afafaf;*/
+        /*}*/
         .menu ul li a{
             display: block;
             width: 25%;
@@ -77,6 +80,7 @@
             text-align: center;
             transform: rotate(90deg);
             cursor: pointer;
+
         }
         .container .section:nth-child(1){
             background: url("img/banner.jpg") no-repeat;
@@ -108,7 +112,7 @@
         <div class="floor2">
             <div class="neikuan">
                 <div class="guanyu">
-                    <h4>关于我</h4>
+                    <h4 style="font-weight: 400;letter-spacing: 10px">关于我</h4>
                     <h5>About me</h5>
                 </div>
                 <div class="jieshao">
@@ -158,15 +162,16 @@
                 <a href="tianmao/tianmao.html" class="bianzi">天猫首页</a>
                 <a href="jingdong/index.html" class="bianzi">京东首页</a>
                 <a href="yidong/yidong.html" class="bianzi">移动首页</a>
+                <a href="pingguo/index.html" class="bianzi">苹果首页</a>
                 <a href="shafa/index.html" class="bianzi">沙发网首页</a>
                 <a href="yintai/index.html" class="bianzi">银泰网首页</a>
             </div>
             <div class="youxi">
                 <h2>游戏作品</h2>
-                <a href="">贪吃蛇</a>
-                <a href="">打字游戏</a>
+                <a href="dazi/index.html">打字游戏</a>
                 <a href="lizi/index.html">粒子动画</a>
-                <a href="">扫雷</a>
+                <a href="saolei/saolei.html">扫雷</a>
+                <a href="jishiben/jishiben.html">记事本</a>
             </div>
         </div>
     </div>
@@ -204,7 +209,7 @@
 </div>
 <script>
     $(".container").fullpage({
-            sectionsColor:["red","#dedede","#CFFF3A","#DEDCA1"],
+            sectionsColor:["red","#dedede","#E7FFF1","#e4e4e4"],
             slidesColor:["#33e3","#444","#555"],
             anchors: ['page1', 'page2', 'page3', 'page4','page5'],
             loopBottom:true,  //是否从最后一屏到第一屏
@@ -223,6 +228,7 @@
                     $('.zuopin').css({left:10}).fadeIn(500);
                     $('.youxi').css({transform:"scale(1,1)"});
                     $('.shouye').css({transform:"scale(1,1)"});
+
 
                 }
                 if(index==4){

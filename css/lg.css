@@ -65,6 +65,7 @@
     padding-bottom:4px;
     margin:0 auto;
     text-align: center;
+
 }
 
 .floor2  > .neikaun > h5{
@@ -171,6 +172,7 @@
     transform: scale(0,0);
     transition: all 0.5s;
     border-radius: 5px;
+    box-shadow: 0 0  7px #ccc;
 }
 .shouye h2{
     width: 100%;
@@ -202,6 +204,7 @@
     transform: scale(0,0);
     transition: all 0.5s;
     border-radius: 5px;
+    box-shadow: 0 0  7px #ccc;
 }
 .youxi h2{
     width: 100%;
