@@ -9,6 +9,23 @@
     <link rel="stylesheet" href="css/lg.css">
     <link rel="stylesheet" href="css/jquery.fullPage.css">
     <style>
+
+        @font-face {font-family: "iconfont";
+            src: url('font/iconfont.eot'); /* IE9*/
+            src: url('font/iconfont.eot#iefix') format('embedded-opentype'), /* IE6-IE8 */
+            url('font/iconfont.woff') format('woff'), /* chrome, firefox */
+            url('font/iconfont.ttf') format('truetype'), /* chrome, firefox, opera, Safari, Android, iOS 4.2+*/
+            url('font/iconfont.svg#iconfont') format('svg'); /* iOS 4.1- */
+        }
+
+        .iconfont {
+            font-family:"iconfont" !important;
+            font-size:16px;
+            font-style:normal;
+            -webkit-font-smoothing: antialiased;
+            -webkit-text-stroke-width: 0.2px;
+            -moz-osx-font-smoothing: grayscale;
+        }
         .menu{
             width: 100%;
             height: 50px;
@@ -16,6 +33,7 @@
             top: 0;
             left: 0;
         }
+
 
         .menu ul{
             margin: 0;
@@ -87,6 +105,12 @@
             background-size: cover;
 
         }
+        .skill:hover .iconfont{
+            color: yellow;
+        }
+        .mar{
+            margin-top: 37px;
+        }
     </style>
 </head>
 <body>
@@ -96,7 +120,7 @@
             <div class="floor1">
                 <h1>欢迎来到我的个人主页</h1>
                 <h2>Welcome to my personal page</h2>
-                <a href=""><img src="img/arrow.png" alt=""></a>
+                <a href="" class="tonext"><img src="img/arrow.png" alt=""></a>
             </div>
             <div class="menu">
                 <ul>
@@ -116,7 +140,7 @@
                     <h5>About me</h5>
                 </div>
                 <div class="jieshao">
-                    <img src="img/1.jpg" alt="">
+                    <img src="img/11.jpg" alt="">
                     <h1>Du shuai</h1>
                     <h2>Front End Engineer</h2>
                 </div>
@@ -130,22 +154,29 @@
                     <div class="skill">
                         <span class="icon">&#xe674;</span>
                         <p class="zi">CSS3</p>
-                        <p class="zi">85%</p>
+                        <p class="zi">90%</p>
                     </div>
                     <div class="skill">
                         <span class="icon">&#xe624;</span>
                         <p class="zi">Java Script</p>
-                        <p class="zi">90%</p>
-                    </div>
-                    <div class="skill skill2">
-                        <span class="icon">&#xe6bf;</span>
-                        <p class="zi">Photo Shop</p>
                         <p class="zi">95%</p>
                     </div>
-                    <div class="skill skill2">
-                        <span class="icon">&#xe6a6;</span>
-                        <p class="zi">Adobe Illustrator</p>
+
+                    <div class="skill mar">
+                        <span class="iconfont">&#xe609;</span>
+                        <p class="zi">PHP</p>
                         <p class="zi">87%</p>
+                    </div>
+
+                    <div class="skill mar">
+                        <span class="iconfont">&#xe644;</span>
+                        <p class="zi">vue.js</p>
+                        <p class="zi">82%</p>
+                    </div>
+                    <div class="skill mar">
+                        <span class="iconfont">&#xe608;</span>
+                        <p class="zi">node.js</p>
+                        <p class="zi">80%</p>
                     </div>
                 </div>
             </div>
@@ -156,17 +187,14 @@
         <div class="neikuan">
             <h1 class="zuopin">作品展示</h1>
             <div class="shouye">
-                <h2>网站首页</h2>
-                <a href="fanke/index.html" class="bianzi" target="_blank">凡客首页</a>
-                <a href="IM/im.html" class="bianzi" target="_blank">小米首页</a>
-                <a href="tianmao/tianmao.html" class="bianzi" target="_blank">天猫首页</a>
-                <a href="jingdong/index.html" class="bianzi" target="_blank">京东首页</a>
-                <a href="yidong/yidong.html" class="bianzi" target="_blank">移动首页</a>
-                <a href="apple/index.html" class="bianzi" target="_blank">苹果首页</a>
-                <a href="shafa/index.html" class="bianzi" target="_blank">沙发网首页</a>
-                <a href="yintai/index.html" class="bianzi" target="_blank">银泰网首页</a>
+                <h2>作品列表</h2>
+                <a href="http://twzjktv.duapp.com/" class="bianzi" target="_blank">乐唱App</a>
+                <a href="http://createhome.duapp.com/" class="bianzi" target="_blank">创家居App</a>
+                <a href="http://boyastore.duapp.com/" class="bianzi" target="_blank">网书林App</a>
+                <a href="http://grdnewsapp.duapp.com" class="bianzi" target="_blank">新闻咨询App</a>
+
             </div>
-  
+
         </div>
     </div>
     <div class="section">
@@ -203,7 +231,7 @@
 </div>
 <script>
     $(".container").fullpage({
-            sectionsColor:["red","#dedede","#E7FFF1","#e4e4e4"],
+            sectionsColor:["","#dedede","#E7FFF1","#e4e4e4"],
             slidesColor:["#33e3","#444","#555"],
             anchors: ['page1', 'page2', 'page3', 'page4','page5'],
             loopBottom:true,  //是否从最后一屏到第一屏
@@ -262,6 +290,8 @@
 
         }
     })
+    
+
 
 
 
