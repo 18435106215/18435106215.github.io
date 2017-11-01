@@ -1,0 +1,257 @@
+/*固定头部*/
+header{
+    width: 100%;
+    height: 0.88rem;
+    background: #f51a1a;
+    display: flex;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 99999;
+}
+header .back{
+    width: 0.88rem;
+
+}
+header .back a{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-size: 0.42rem;
+
+}
+header .sousuo{
+    flex: 6;
+    position: relative;
+}
+header .sousuo span{
+    width: 0.5rem;
+    height: 0.5rem;
+    display: block;
+    position: absolute;
+    color: #adadad;
+    left: 0.1rem;
+    top: 0.21rem;
+    font-size: 0.34rem;
+    z-index: 100;
+    text-align: center;
+    line-height: 0.47rem;
+}
+header .sousuo input{
+    display: block;
+    width: 100%;
+    height: 80%;
+    background: #fff;
+    outline: none;
+    border: none;
+    position: absolute;
+    top: 0.09rem;
+    padding-left: 0.67rem;
+    color: #ADADAD;
+}
+header .sousuo p{
+    font-size: 0.26rem;
+    position: absolute;
+    left: 0.6rem;
+    color: #ADADAD;
+    top: 0.25rem;
+}
+header .gouwu{
+    width: 0.88rem;
+    position: relative;
+
+}
+header .gouwu a:nth-child(1){
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-size: 0.42rem;
+
+}
+header .gouwu a:nth-child(2){
+    display: block;
+    position: absolute;
+    width: 0.32rem;
+    height: 0.32rem;
+    border-radius: 50%;
+    color: #fff;
+    text-align: center;
+    line-height: 0.32rem;
+    background: #f5b21a;
+    font-size: 0.18rem;
+    right: 0.08rem;
+    top: 0.08rem;
+}
+
+
+
+
+
+
+/*nav部分*/
+nav{
+    width: 100%;
+    height: 1.02rem;
+    /*background: #4E4E4E;*/
+    margin-top: 0.88rem;
+    border-bottom: 0.04rem solid #f1f1f1;
+}
+nav ul{
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+nav ul li{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.3rem;
+    color: #a0a0a0;
+    position: relative;
+}
+nav ul li:nth-child(2) span,nav ul li:nth-child(3) span,nav ul li:nth-child(4) span{
+    position: absolute;
+    font-size: 0.16rem;
+    color: #f51a1a;
+    top: 0.32rem;
+    right: 0.1rem;
+}
+nav ul li:nth-child(2) p,nav ul li:nth-child(3) p,nav ul li:nth-child(4) p{
+    position: absolute;
+    font-size: 0.16rem;
+    color: #188ced ;
+    top: 0.5rem;
+    right: 0.1rem;
+}
+
+
+
+
+/*商品列表部分*/
+section{
+    width: 100%;
+    height: auto;
+    background: #f1f1f1;
+    padding-bottom: 0.98rem;
+}
+section ul{
+    width: 100%;
+    height: 100%;
+}
+section ul li{
+    width: 100%;
+    height: 3.02rem;
+    padding: 0.23rem;
+    position: relative;
+    background: #fff;
+    margin-bottom: 0.02rem;
+}
+section ul li .good_img{
+    width: 2.5rem;
+    height: 100%;
+    float: left;
+}
+section ul li .good_img img{
+    width: 100%;
+    height: 100%;
+}
+section ul li .good_content{
+    width: 4.4rem;
+    height: 100%;
+    float: left;
+    margin-left: 0.14rem;
+}
+section ul li .good_content p.good_name{
+    width: 100%;
+    font-size: 0.28rem;
+    color: #464343;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-weight: bold;
+    white-space: nowrap;
+
+}
+section ul li .good_content p.good_store{
+    font-size: 0.22rem;
+    color: #867a7a;
+    margin-top: 0.2rem;
+}
+section ul li .good_content .sm_img{
+    height: 0.5rem;
+    width: auto;
+    position: relative;
+    margin-top: 0.15rem;
+}
+section ul li .good_content .sm_img img{
+    position: absolute;
+    width: 0.33rem;
+    height: 0.33rem;
+}
+section ul li .good_content .sm_img img:nth-child(1){
+    left: 0;
+    top: 0;
+}
+section ul li .good_content .sm_img img:nth-child(2){
+    left: 0.45rem;
+    top: 0;
+}
+section ul li .good_content .sm_img img:nth-child(3){
+    left: 0.88rem;
+    top: 0;
+}
+section ul li .good_content .good_price{
+    font-size: 0.32rem;
+    color: #f51a1a;
+    position: absolute;
+    bottom: 0.15rem;
+    left: 2.94rem;
+}
+section ul li .good_content .good_gouwu{
+    position: absolute;
+    right: 0.2rem;
+    bottom: 0.15rem;
+    font-size: 0.56rem;
+    color: #f51a1a;
+}
+
+
+
+
+
+
+
+/*固定底部*/
+footer{
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 0.98rem;
+    /*background: red;*/
+    display: flex;
+    z-index: 99999;
+    background: #fff;
+}
+footer a{
+    color: #ADADAD;
+    flex: 1;
+}
+footer a p{
+    font-size: 0.56rem;
+    text-align: center;
+    padding-bottom: .1rem;
+
+}
+footer a span{
+    display: block;
+    font-size: 0.24rem;
+    text-align: center;
+    margin-top: -0.16rem;
+}
