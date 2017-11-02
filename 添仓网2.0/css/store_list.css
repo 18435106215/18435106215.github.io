@@ -134,124 +134,114 @@ nav ul li:nth-child(2) p,nav ul li:nth-child(3) p,nav ul li:nth-child(4) p{
 
 
 
-/*商品列表部分*/
+/*店铺列表部分*/
 section{
     width: 100%;
     height: auto;
     background: #f1f1f1;
-    padding-bottom: 0.98rem;
 }
 section ul{
     width: 100%;
     height: 100%;
 }
 section ul li{
-    width: 100%;
-    height: 3.02rem;
     padding: 0.23rem;
-    position: relative;
-    background: #fff;
+    height: 4.3rem;
+    /*background: #00a8f6;*/
     margin-bottom: 0.02rem;
-}
-section ul li .good_img{
-    width: 2.5rem;
-    height: 100%;
-    float: left;
-}
-section ul li .good_img img{
-    width: 100%;
-    height: 100%;
-}
-section ul li .good_content{
-    width: 4.4rem;
-    height: 100%;
-    float: left;
-    margin-left: 0.14rem;
-}
-section ul li .good_content p.good_name{
-    width: 100%;
-    font-size: 0.28rem;
-    color: #464343;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    font-weight: bold;
-    white-space: nowrap;
-
-}
-section ul li .good_content p.good_store{
-    font-size: 0.22rem;
-    color: #867a7a;
-    margin-top: 0.2rem;
-}
-section ul li .good_content .sm_img{
-    height: 0.5rem;
-    width: auto;
-    position: relative;
-    margin-top: 0.15rem;
-}
-section ul li .good_content .sm_img img{
-    position: absolute;
-    width: 0.33rem;
-    height: 0.33rem;
-}
-section ul li .good_content .sm_img img:nth-child(1){
-    left: 0;
-    top: 0;
-}
-section ul li .good_content .sm_img img:nth-child(2){
-    left: 0.45rem;
-    top: 0;
-}
-section ul li .good_content .sm_img img:nth-child(3){
-    left: 0.88rem;
-    top: 0;
-}
-section ul li .good_content .good_price{
-    font-size: 0.32rem;
-    color: #f51a1a;
-    position: absolute;
-    bottom: 0.15rem;
-    left: 2.94rem;
-}
-section ul li .good_content .good_gouwu{
-    position: absolute;
-    right: 0.2rem;
-    bottom: 0.15rem;
-    font-size: 0.56rem;
-    color: #f51a1a;
-}
-
-
-
-
-
-
-
-/*固定底部*/
-footer{
-    position: fixed;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    height: 0.98rem;
-    /*background: red;*/
-    display: flex;
-    z-index: 99999;
     background: #fff;
 }
-footer a{
-    color: #ADADAD;
-    flex: 1;
+section ul li:last-child{
+    margin-bottom: 0;
 }
-footer a p{
-    font-size: 0.56rem;
-    text-align: center;
-    padding-bottom: .1rem;
-
+section ul li .store_con{
+    width: 100%;
+    height: 1.45rem;
+    position: relative;
+    border-bottom: 1px solid #e5e5e5;
 }
-footer a span{
-    display: block;
+section ul li .store_con .store_logo{
+    width: 1.2rem;
+    height: 1.2rem;
+    border-radius: 50%;
+}
+section ul li .store_con .store_logo img{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+section ul li .store_con h3{
+    position: absolute;
+    font-size: 0.26rem;
+    color: #463443;
+    left: 1.35rem;
+    top: 0.17rem;
+}
+section ul li .store_con img.store_pinglei{
+    position: absolute;
+    width: 0.75rem;
+    height: 0.35rem;
+    /*background: red;*/
+    left: 1.35rem;
+    top: 0.6rem;
+}
+section ul li .store_con span.join_store{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    margin: auto;
+    width: 1.04rem;
+    height: 0.45rem;
+    border: 1px solid #f51a1a;
+    border-radius: 1rem;
     font-size: 0.24rem;
     text-align: center;
-    margin-top: -0.16rem;
+    color: #f51a1a;
+    line-height: 0.4rem;
 }
+section ul li .store_img{
+    width: 100%;
+    height: 2.39rem;
+    margin-top: 0.2rem;
+
+}
+section ul li .store_img ul{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+section ul li .store_img ul li{
+    width: 2.2rem;
+    height: 2.2rem;
+    position: relative;
+}
+section ul li .store_img ul li img{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 2.2rem;
+    height: 2.2rem;
+}
+section ul li .store_img ul li span{
+    padding: 0.04rem;
+    background: #f1f1f1;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+section ul li .store_img ul li span{
+    color: #463443;
+    font-size: 0.2rem;
+}
+
+
+
+
+
+
+
+
+
+
