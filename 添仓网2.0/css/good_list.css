@@ -116,6 +116,9 @@ nav ul li{
     color: #a0a0a0;
     position: relative;
 }
+nav ul li.active{
+    color: #f51a1a;
+}
 nav ul li:nth-child(2) span,nav ul li:nth-child(3) span,nav ul li:nth-child(4) span{
     position: absolute;
     font-size: 0.16rem;
@@ -139,7 +142,6 @@ section{
     width: 100%;
     height: auto;
     background: #f1f1f1;
-    padding-bottom: 0.98rem;
 }
 section ul{
     width: 100%;

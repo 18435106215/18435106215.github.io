@@ -1,0 +1,348 @@
+body{
+    background: #f1f1f1;
+}
+/*固定头部*/
+header{
+    width: 100%;
+    height: 0.88rem;
+    background: #f51a1a;
+    display: flex;
+    position: fixed;
+    left: 0;
+    top: 0;
+
+}
+header .back{
+    width: 0.88rem;
+
+}
+header .back a{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-size: 0.42rem;
+
+}
+header .order_title{
+    flex: 6;
+    position: relative;
+    font-size: 0.38rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+}
+
+header .gouwu{
+    width: 0.88rem;
+    position: relative;
+
+}
+
+
+/*订单主题部分*/
+section{
+    margin-top: 0.88rem;
+}
+/*收货信息*/
+section .shouhuo{
+    width: 100%;
+    height: 2.15rem;
+    background: #fff;
+    padding: 0 0.23rem;
+    padding-top: 0.15rem;
+    margin-bottom: 0.2rem;
+    box-shadow: 0 0 10px #dbced9;
+}
+section .shouhuo a{
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+section .shouhuo ul{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+section .shouhuo ul li{
+    flex: 1;
+}
+section .shouhuo ul li:nth-child(1) p:nth-child(1){
+    float: left;
+    height: 100%;
+    font-size: 0.3rem;
+    color: #3b3b3b;
+    line-height: 0.67rem;
+
+}
+section .shouhuo ul li:nth-child(1) p:nth-child(2){
+    float: right;
+    height: 100%;
+    font-size: 0.3rem;
+    color: #3b3b3b;
+    font-weight: 600;
+    line-height: 0.67rem;
+
+}
+section .shouhuo ul li:nth-child(2) p:nth-child(1){
+    float: left;
+    height: 100%;
+    font-size: 0.3rem;
+    color: #929292;
+    line-height: 0.67rem;
+
+}
+section .shouhuo ul li:nth-child(2) p:nth-child(2){
+    float: right;
+    height: 100%;
+    font-size: 0.3rem;
+    color: #929292;
+    line-height: 0.67rem;
+}
+section .shouhuo ul li:nth-child(3).address{
+    color: #929292;
+    line-height: 0.67rem;
+    font-size: 0.28rem;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+
+/*支付信息*/
+section .pay{
+    width: 100%;
+    height: 3.8rem;
+    background: #fff;
+    padding: 0.23rem;
+    margin-bottom: 0.2rem;
+}
+section .pay .pay_style{
+    width: 100%;
+    height: 1.6rem;
+    border-bottom: 0.01rem solid #f1f1f1;
+}
+section .pay .pay_style p{
+    font-size: 0.3rem;
+    color: #3b3b3b;
+}
+section .pay .pay_style .pay_lei{
+    width: 100%;
+    height: 0.65rem;
+    margin-top: 0.28rem;
+    display: flex;
+    justify-content: space-between;
+}
+section .pay .pay_style .pay_lei>div{
+    width: 1.9rem;
+    height: 100%;
+    text-align: center;
+    line-height: 0.65rem;
+    background: #c6c6c6;
+    border-radius: 0.6rem;
+    color: #fff;
+    font-size: 0.28rem;
+}
+section .pay .pay_style .pay_lei>div.active{
+    background: #fff;
+    border: 1px solid #f51a1a;
+    color: #f51a1a;
+}
+section .pay .zhanghu{
+    width: 100%;
+    height: 1.89rem;
+}
+
+
+/*账户信息*/
+
+section .zhanghu a{
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+section .zhanghu ul{
+    width: 100%;
+    height: 100%;
+}
+section .zhanghu ul li:nth-child(1){
+    height: 0.66rem;
+}
+
+section .zhanghu ul li:nth-child(1) p:nth-child(1){
+    float: left;
+    height: 100%;
+    font-size: 0.3rem;
+    color: #3b3b3b;
+    line-height: 0.67rem;
+
+}
+section .zhanghu ul li:nth-child(1) p:nth-child(2){
+    float: right;
+    height: 100%;
+    font-size: 0.3rem;
+    color: #3b3b3b;
+    font-weight: 600;
+    line-height: 0.67rem;
+
+}
+section .zhanghu ul li:nth-child(2),section .zhanghu ul li:nth-child(3),section .zhanghu ul li:nth-child(4){
+    color: #929292;
+    font-size: 0.22rem;
+    margin-bottom: 0.03rem;
+}
+
+
+/*发票信息*/
+
+section .fapiao{
+    padding: 0.07rem 0.23rem;
+    height: 1.35rem;
+    background: #fff;
+    margin-bottom: 0.2rem;
+}
+
+section .fapiao a{
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+section .fapiao ul{
+    width: 100%;
+    height: 100%;
+}
+section .fapiao ul li:nth-child(1){
+    height: 0.66rem;
+}
+
+section .fapiao ul li:nth-child(1) p:nth-child(1){
+    float: left;
+    height: 100%;
+    font-size: 0.3rem;
+    color: #3b3b3b;
+    line-height: 0.67rem;
+
+}
+section .fapiao ul li:nth-child(1) p:nth-child(2){
+    float: right;
+    height: 100%;
+    font-size: 0.3rem;
+    color: #3b3b3b;
+    font-weight: 600;
+    line-height: 0.67rem;
+}
+section .fapiao ul li:nth-child(2){
+    color: #929292;
+    font-size: 0.22rem;
+    margin-top: 0.06rem;
+}
+
+/*商品清单*/
+section .shangp_list{
+    background: #fff;
+    padding: 0.23rem;
+}
+section .shangp_list ul{
+    width: 100%;
+    height: 100%;
+}
+section .shangp_list ul li:nth-child(1){
+    height: 0.66rem;
+}
+
+section .shangp_list ul li:nth-child(1) p:nth-child(1){
+    float: left;
+    height: 100%;
+    font-size: 0.3rem;
+    color: #3b3b3b;
+    line-height: 0.67rem;
+
+}
+section .shangp_list ul li:nth-child(1) p:nth-child(2){
+    float: right;
+    height: 100%;
+    font-size: 0.3rem;
+    line-height: 0.67rem;
+    color: #929292;
+}
+section .shangp_list ul li:nth-child(1) p:nth-child(2) span.iconfont{
+    font-weight: 600;
+    color: #3b3b3b;
+
+}
+
+
+/*备注信息*/
+
+section .beizhu{
+    background: #fff;
+    padding: 0.23rem;
+}
+section .beizhu ul{
+    width: 100%;
+    height: 100%;
+}
+section .beizhu ul li:nth-child(1){
+    height: 0.66rem;
+}
+
+section .beizhu ul li:nth-child(1) p:nth-child(1){
+    float: left;
+    height: 100%;
+    font-size: 0.3rem;
+    color: #3b3b3b;
+    line-height: 0.67rem;
+
+}
+section .beizhu ul li:nth-child(1) p:nth-child(2){
+    float: right;
+    height: 100%;
+    font-size: 0.3rem;
+    line-height: 0.67rem;
+    color: #929292;
+}
+
+
+
+/*底部*/
+footer{
+    width: 100%;
+    height: 0.98rem;
+    background: #fff;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    display: flex;
+}
+footer .total{
+    flex: 2;
+    padding-left: 0.23rem;
+}
+footer .total p{
+    font-size: 0.28rem;
+    height: 100%;
+    line-height: 0.98rem;
+    color: #3b3b3b;
+}
+footer .total p span{
+    color: #f51a1a;
+}
+footer .tijiao{
+    flex: 1.2;
+    background: #f51a1a;
+
+}
+footer .tijiao a{
+    display: block;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    line-height: 0.98rem;
+    color: #fff;
+    font-size: 0.38rem;
+
+}

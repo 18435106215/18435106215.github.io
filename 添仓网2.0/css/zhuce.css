@@ -1,6 +1,6 @@
 header{
     width: 7.5rem;
-    height: 4rem;
+    height: 3.5rem;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -38,13 +38,15 @@ section form input{
     outline: none;
     font-size: 0.3rem;
 }
-section form input:nth-child(5){
+section form input:nth-child(4){
     margin-top: 0.7rem;
     background: #e83329;
     color: #fff;
     font-size: 0.36rem;
     border-radius: 0.5rem;
-    /*box-shadow: 1px 1px 0 #e4e4e4;*/
+}
+section{
+    width: 100%;
 }
 section form p{
     display: flex;
@@ -54,22 +56,20 @@ section form p{
     height: 0.6rem;
     position: absolute;
     right: 0.95rem;
-    top: 4.1rem;
+    top: 2.8rem;
     font-size: 0.12rem;
     border: 1px solid #C3C3C3;
     border-radius: 0.5rem;
     color: #999;
 }
-footer{
-    width: 100%;
-}
-footer a{
+section a{
     display: block;
-    width: 100%;
     text-align: center;
     font-size: 0.3rem;
-    position: fixed;
-    bottom: 0.5rem;
-    margin:  auto;
+    position: absolute;
+    top: 12.4rem;
+    left: 0;
+    right: 0;
+    margin:0 auto;
     color: #E83329;
 }

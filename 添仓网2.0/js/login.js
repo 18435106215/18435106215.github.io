@@ -12,7 +12,8 @@ $(function () {
         if(account.val()){
             submit.removeClass('active')
         }else {
-
+            submit.addClass('active')
         }
     })
+
 })
