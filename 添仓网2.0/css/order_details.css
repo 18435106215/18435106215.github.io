@@ -46,6 +46,7 @@ header .gouwu{
 /*订单主题部分*/
 section{
     margin-top: 0.88rem;
+    padding-bottom: 0.98rem;
 }
 /*收货信息*/
 section .shouhuo{
@@ -245,6 +246,7 @@ section .fapiao ul li:nth-child(2){
 section .shangp_list{
     background: #fff;
     padding: 0.23rem;
+    margin-bottom: 0.2rem;
 }
 section .shangp_list ul{
     width: 100%;
