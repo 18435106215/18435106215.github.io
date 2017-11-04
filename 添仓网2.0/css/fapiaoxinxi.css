@@ -1,0 +1,128 @@
+body{
+    background: #f1f1f1;
+}
+/*固定头部*/
+header{
+    width: 100%;
+    height: 0.88rem;
+    background: #f51a1a;
+    display: flex;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 99999;
+}
+header .back{
+    width: 0.88rem;
+
+}
+header .back a{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-size: 0.42rem;
+
+}
+header .sousuo{
+    flex: 6;
+    position: relative;
+    font-size: 0.38rem;
+    color: #fff;
+    text-align: center;
+    line-height: 0.88rem;
+}
+header .gouwu{
+    width: 0.88rem;
+    position: relative;
+
+}
+
+
+/*section部分*/
+section{
+    width: 100%;
+    margin-top: 0.88rem;
+    padding: 0 0.23rem;
+    padding-bottom: 0.98rem;
+}
+section .fapiao{
+    width: 100%;
+    height: 0.8rem;
+    border-bottom: 0.02rem solid #ddd5d5;
+}
+section .fapiao div{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 0.25rem;
+}
+section .fapiao span:first-child{
+    color: #463443;
+    font-size: 0.28rem;
+    line-height: 0.8rem;
+}
+section .fapiao span:nth-child(2){
+    width: 0.32rem;
+    height: 0.32rem;
+    background: #d8d8d8;
+}
+section .fapiao span:nth-child(2).active{
+    background: #f51a1a;
+    border-radius: 0.05rem;
+}
+section .fapiao ul.fapiao_list{
+    width: 100%;
+    height: auto;
+    padding-right: 0.25rem;
+    border-bottom: 0.02rem solid #ddd5d5;
+    padding-bottom: 0.2rem;
+}
+section .fapiao ul.fapiao_list li{
+    width: 100%;
+    height: 0.7rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+section .fapiao ul.fapiao_list li i{
+    color: #463443;
+    font-size: 0.28rem;
+    font-style: normal;
+}
+section .fapiao ul.fapiao_list li i:nth-child(2){
+    color: #929292;
+}
+
+
+
+
+
+/*固定底部*/
+footer{
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 0.98rem;
+    display: flex;
+    z-index: 99999;
+    background: #fff;
+}
+footer a{
+    flex: 1;
+    font-size: 0.38rem;
+    text-align: center;
+    line-height: 0.98rem;
+}
+footer a:first-child{
+    color: #929292;
+}
+footer a:nth-child(2){
+    background: #f51a1a;
+    color: #fff;
+}
