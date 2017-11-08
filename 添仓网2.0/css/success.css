@@ -1,0 +1,105 @@
+/*固定头部*/
+header{
+    width: 100%;
+    height: 0.88rem;
+    background: #f51a1a;
+    display: flex;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 99999;
+}
+header .back{
+    width: 0.88rem;
+
+}
+header .back a{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-size: 0.42rem;
+
+}
+header .sousuo{
+    color: #fff;
+    font-size: 0.38rem;
+    line-height: 0.88rem;
+}
+header .sousuo{
+    flex: 6;
+    position: relative;
+}
+
+header .gouwu{
+    width: 0.88rem;
+    position: relative;
+
+}
+
+/*section部分*/
+section{
+    width: 100%;
+    height: 5.5rem;
+    margin-top: 0.88rem;
+    padding-top: 1.3rem;
+}
+section img{
+    display: block;
+    margin: 0 auto;
+    width: 1.5rem;
+    height: 1.5rem;
+    border-radius: 50%;
+}
+section p{
+    width: 100%;
+    color: #f51a1a;
+    font-size: 0.36rem;
+    text-align: center;
+    margin-top: 0.2rem;
+}
+section i{
+    display: block;
+    width: 100%;
+    text-align: center;
+    font-style: normal;
+    color: #929292;
+    font-size: 0.24rem;
+    margin-top: 0.2rem;
+}
+section .tuihuo{
+    width: 2.2rem;
+    height: 0.7rem;
+    margin: 0 auto;
+    margin-top: 0.25rem;
+
+}
+section .tuihuo a{
+    display: block;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    line-height: 0.7rem;
+    color: #463443;
+    font-size: 0.28rem;
+    background: #d8d8d8;
+    border-radius: 0.05rem;
+
+}
+
+
+/*固定底部*/
+footer{
+    width: 100%;
+    height: 0.98rem;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    color: #fff;
+    font-size: 0.38rem;
+    text-align: center;
+    line-height: 0.98rem;
+    background: #f51a1a;
+}

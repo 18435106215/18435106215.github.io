@@ -81,6 +81,9 @@
 }
 a{
   text-decoration: none;
+  -webkit-tap-highlight-color:transparent;
+
+
 }
 body{
   /*width: 7.5rem;*/
@@ -91,6 +94,12 @@ body{
   content: '';
   clear: both;
 }
+
+
+/*公告底部*/
+/*footer a.active{*/
+  /**/
+/*}*/
 
 
 

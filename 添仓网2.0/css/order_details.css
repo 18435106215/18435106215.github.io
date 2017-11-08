@@ -1,6 +1,7 @@
 body{
     background: #f1f1f1;
 }
+
 /*固定头部*/
 header{
     width: 100%;
@@ -24,7 +25,6 @@ header .back a{
     align-items: center;
     color: #fff;
     font-size: 0.42rem;
-
 }
 header .order_title{
     flex: 6;

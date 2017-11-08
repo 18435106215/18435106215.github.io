@@ -1,0 +1,193 @@
+body{
+    overflow: hidden;
+}
+/*固定头部*/
+
+header{
+    width: 100%;
+    height: 0.88rem;
+    background: #f51a1a;
+    display: flex;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 999;
+}
+header .back{
+    width: 0.88rem;
+
+}
+header .back a{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-size: 0.42rem;
+}
+header .sousuo{
+    color: #fff;
+    font-size: 0.38rem;
+    line-height: 0.88rem;
+}
+header .sousuo{
+    flex: 6;
+    position: relative;
+}
+
+header .gouwu{
+    width: 0.88rem;
+    position: relative;
+
+}
+/*section部分*/
+section{
+    margin-top: 0.88rem;
+    border-top: 0.15rem solid #f1f1f1;
+    padding: 0 0.23rem;
+}
+
+section .company_box{
+    width: 100%;
+    height: auto;
+}
+section .company_box div{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 0.25rem;
+}
+section .company_box span:first-child{
+    color: #463443;
+    font-size: 0.28rem;
+    line-height: 0.8rem;
+}
+section .company_box span:nth-child(2){
+    width: 0.32rem;
+    height: 0.32rem;
+    background: #d8d8d8;
+}
+section .company_box span:nth-child(2).active{
+    background: #f51a1a;
+    border-radius: 0.05rem;
+}
+section .company_box ul{
+    width: 100%;
+    height: auto;
+    padding-right: 0.25rem;
+}
+
+section .company_box ul li{
+    width: 100%;
+    height: 0.9rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 0.1px solid #f1f1f1;
+}
+section .company_box ul li i{
+    color: #463443;
+    font-size: 0.28rem;
+    font-style: normal;
+}
+section .company_box ul li i:nth-child(2){
+    color: #929292;
+}
+section .company_box ul li input{
+    width: 5.2rem;
+    text-align: right;
+    outline: none;
+    height: 100%;
+    border: none;
+}
+
+section .next{
+    width: 6.9rem;
+    height: 0.87rem;
+    text-align: center;
+    line-height: 0.87rem;
+    color: #fff;
+    background: #f51a1a;
+    font-size: 0.32rem;
+    margin: 0 auto;
+    border-radius: 0.1rem;
+    margin-top: 0.3rem;
+}
+
+/*遮罩*/
+.mask{
+    width:100%;
+    height: 20rem;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 9999;
+    background: #000;
+    opacity: 0.25;
+    transform: scale(0,0);
+    transition: all .25s;
+}
+.mask.active{
+    transform: scale(1,1);
+}
+.xuanzehangye ul{
+    width: 3.4rem;
+    height: auto;
+    padding: 0.25rem 0;
+    background: #fff;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 15%;
+    margin: auto;
+    z-index: 99999;
+    transform: scale(0,0);
+    transition: all .35s;
+
+}
+.xuanzehangye ul.active{
+    transform: scale(1,1);
+}
+.xuanzehangye ul li{
+    width: 100%;
+    height: 0.8rem;
+    font-size: 0.3rem;
+    color: #5a5a5a;
+    text-align: center;
+    line-height: 0.8rem;
+}
+.xuanzehangye ul li.active{
+    color: #f51a1a;
+}
+.xuanzeshenfen ul{
+    width: 3.4rem;
+    height: auto;
+    padding: 0.25rem 0;
+    background: #fff;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 30%;
+    margin: auto;
+    z-index: 99999;
+    transform: scale(0,0);
+    transition: all .25s;
+
+}
+.xuanzeshenfen ul.active{
+    transform: scale(1,1);
+}
+.xuanzeshenfen ul li{
+    width: 100%;
+    height: 0.8rem;
+    font-size: 0.3rem;
+    color: #5a5a5a;
+    text-align: center;
+    line-height: 0.8rem;
+}
+.xuanzeshenfen ul li.active{
+    color: #f51a1a;
+}

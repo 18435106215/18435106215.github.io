@@ -50,7 +50,7 @@ section{
 }
 section .fapiao{
     width: 100%;
-    height: 0.8rem;
+    height: auto;
     border-bottom: 0.02rem solid #ddd5d5;
 }
 section .fapiao div{
@@ -81,7 +81,9 @@ section .fapiao ul.fapiao_list{
     padding-right: 0.25rem;
     border-bottom: 0.02rem solid #ddd5d5;
     padding-bottom: 0.2rem;
+    /*display: none;*/
 }
+
 section .fapiao ul.fapiao_list li{
     width: 100%;
     height: 0.7rem;
@@ -97,7 +99,36 @@ section .fapiao ul.fapiao_list li i{
 section .fapiao ul.fapiao_list li i:nth-child(2){
     color: #929292;
 }
+section .fapiao ul.fapiao_list li input{
+    width: 5.2rem;
+    text-align: right;
+    outline: none;
+    height: 100%;
+    border: none;
+    background: #f1f1f1;
+}
+section .fapiao:nth-child(2){
+    overflow: hidden;
+}
 
+section .fapiao:nth-child(2) .fapiao_list{
+    height: 0;
+    transition: all .2s;
+}
+section .fapiao:nth-child(2) .fapiao_list.active{
+    height: 2.1rem;
+}
+section .fapiao:nth-child(3){
+    overflow: hidden;
+}
+
+section .fapiao:nth-child(3) .fapiao_list{
+    height: 0;
+    transition: all .2s;
+}
+section .fapiao:nth-child(3) .fapiao_list.active{
+    height: 4.9rem;
+}
 
 
 

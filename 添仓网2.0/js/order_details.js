@@ -8,7 +8,9 @@ $(function () {
         $(this).addClass('active');
     })
 
-    $('.tijiao').click(function () {
-        alert(1);
-    })
+
+
+
+
+
 })
